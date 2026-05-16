@@ -3,7 +3,7 @@ const { app, migrate, rollback, truncate, closeDb } = require('./helpers');
 
 beforeAll(async () => await migrate());
 afterAll(async () => { await rollback(); await closeDb(); });
-beforeEach(async () => await truncate('refresh_tokens', 'attendance_sessions', 'users', 'work_schedules'));
+beforeEach(async () => await truncate());
 
 const BASE   = '/api/auth';
 const USER   = { name: 'Test User', email: 'test@syncshift.dev', password: 'Test1234!', phone: '0712345678' };

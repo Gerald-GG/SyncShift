@@ -4,7 +4,7 @@ const { app, db, migrate, rollback, truncate, closeDb } = require('./helpers');
 beforeAll(async () => await migrate());
 afterAll(async () => { await rollback(); await closeDb(); });
 beforeEach(async () => {
-  await truncate('refresh_tokens', 'attendance_sessions', 'users', 'work_schedules', 'office_locations');
+  await truncate();
 });
 
 const BASE  = '/api/attendance';
