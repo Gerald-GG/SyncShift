@@ -51,16 +51,16 @@ bcrypt hashing, and OS-level encrypted token storage.
 
 ## Tech Stack
 
-| Layer    | Technology                                      |
-|----------|-------------------------------------------------|
-| Backend  | Node.js · Express · PostgreSQL (raw SQL + knex) |
-| Web      | React · Vite · Axios · Context API              |
-| Mobile   | React Native · Expo · SecureStore               |
+| Layer    | Technology                                        |
+|----------|---------------------------------------------------|
+| Backend  | Node.js · Express · PostgreSQL (raw SQL + knex)   |
+| Web      | React · Vite · Axios · Context API                |
+| Mobile   | React Native · Expo · SecureStore                 |
 | Auth     | JWT (RS256) · bcrypt (cost 12) · httpOnly cookies |
-| Jobs     | node-cron                                       |
-| Export   | pdfkit (PDF) · csv-stringify (CSV)              |
-| Infra    | Docker Compose · Nginx                          |
-| Testing  | Jest · Supertest                                |
+| Jobs     | node-cron                                         |
+| Export   | pdfkit (PDF) · csv-stringify (CSV)                |
+| Infra    | Docker Compose · Nginx                            |
+| Testing  | Jest · Supertest                                  |
 
 ---
 
